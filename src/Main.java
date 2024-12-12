@@ -1,15 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Locale;
+
+//Aula01, tipos de dados de entrada e saida no java
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int y = 32;
+        double x = 10.45679;
+        System.out.println("Bom dia!");
+        System.out.println(y);
+        System.out.printf("%.2f%n", x);
+        Locale.setDefault(Locale.US);
+        System.out.printf("%.2f%n", x);
+        System.out.println("resultado = " + x + " metros");
+        System.out.printf("resultado = %.2f metros%n", x);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        String nome = "Maria";
+        int idade = 34;
+        double renda = 4000.00;
+        System.out.printf("%s tem %d anos e recebe %.2f reais", nome ,idade, renda);
+
+
     }
-}
+    }
