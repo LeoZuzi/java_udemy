@@ -21,6 +21,6 @@ public class exer07condicao {
             imposto = (renda - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
             System.out.printf("imposto: %.2f%n ",imposto);
         }
-
+        sc.close();
     }
 }
